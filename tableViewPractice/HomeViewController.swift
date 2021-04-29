@@ -10,7 +10,23 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDataSource, UIWebViewDelegate, UITableViewDelegate {
 
    @IBOutlet weak var tableView: UITableView!
-   
+
+   var names: [String] = ["Ellen", "James", "Amber", "Lucas", "Tiger"]
+
+   var users:[[String : String]] =
+      [
+         ["name" : "Ellen",
+          "hometown" : "Taipei"],
+         ["name": "James",
+          "hometown" : "Taipei"],
+         ["name": "Amber",
+          "hometown" : "Berkeley"],
+         ["name" : "Lucas",
+          "hometown" : "Berkeley"],
+         ["name" : "Tiger",
+          "hometown" : "Woodland"]
+      ]
+
    override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +42,11 @@ class HomeViewController: UIViewController, UITableViewDataSource, UIWebViewDele
 
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell") as! UserCell
+
+      let user = users[indexPath.row]
+
+      cell.nameLabel.text = user["name"]
+      cell.hometownLabel.text = user["hometown"]
 
       return cell
    }
