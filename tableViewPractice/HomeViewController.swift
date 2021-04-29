@@ -25,8 +25,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UIWebViewDele
    }
 
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      let cell = UITableViewCell()
-      cell.textLabel?.text = "This is row \(indexPath.row)"
+      let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell") as! UserCell
 
       return cell
    }
