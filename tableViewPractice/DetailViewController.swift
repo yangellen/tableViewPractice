@@ -11,15 +11,16 @@ class DetailViewController: UIViewController {
 
    @IBOutlet weak var label: UILabel!
 
-   var index: Int!
+   var color: String!
+   var name: String!
    
    override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-      label.text = ("You tapped the cell at index \(index ?? -1)")
+      label.text = ("\(name ?? "no name") likes \(color ?? "black").")
     }
-    
+
 
     /*
     // MARK: - Navigation

@@ -16,15 +16,20 @@ class HomeViewController: UIViewController, UITableViewDataSource, UIWebViewDele
    var users:[[String : String]] =
       [
          ["name" : "Ellen",
-          "hometown" : "Taipei"],
+          "hometown" : "Taipei",
+          "color" : "purple"],
          ["name": "James",
-          "hometown" : "Taipei"],
+          "hometown" : "Taipei",
+          "color" : "blue"],
          ["name": "Amber",
-          "hometown" : "Berkeley"],
+          "hometown" : "Berkeley",
+          "color": "pink"],
          ["name" : "Lucas",
-          "hometown" : "Berkeley"],
+          "hometown" : "Berkeley",
+          "color" : "orange"],
          ["name" : "Tiger",
-          "hometown" : "Woodland"]
+          "hometown" : "Woodland",
+          "color" : "green"]
       ]
 
    override func viewDidLoad() {
@@ -55,12 +60,17 @@ class HomeViewController: UIViewController, UITableViewDataSource, UIWebViewDele
 
        // Get the index path from the cell that was tapped
        let indexPath = tableView.indexPathForSelectedRow
-       // Get the Row of the Index Path and set as index
-       let index = indexPath?.row
+
+       let user = users[indexPath?.row ?? -1]
+
+       let color = user["color"]
+       let name = user["name"]
+
        // Get in touch with the DetailViewController
-      let detailViewController = segue.destination as! DetailViewController
+       let detailViewController = segue.destination as! DetailViewController
        // Pass on the data to the Detail ViewController by setting it's indexPathRow value
-       detailViewController.index = index
+       detailViewController.color = color
+       detailViewController.name = name
    }
 
    /*
