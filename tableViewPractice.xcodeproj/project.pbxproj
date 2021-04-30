@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C5A49EB1263B2F6A0087527C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49EB0263B2F6A0087527C /* UserCell.swift */; };
+		C5A49EB9263B8CF30087527C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49EB8263B8CF30087527C /* DetailViewController.swift */; };
 		C5AF9545263A34E500ABAB1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF9544263A34E500ABAB1F /* AppDelegate.swift */; };
 		C5AF9547263A34E500ABAB1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF9546263A34E500ABAB1F /* SceneDelegate.swift */; };
 		C5AF954C263A34E500ABAB1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5AF954A263A34E500ABAB1F /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		C5A49EB0263B2F6A0087527C /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		C5A49EB8263B8CF30087527C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C5AF9541263A34E500ABAB1F /* tableViewPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AF9544263A34E500ABAB1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5AF9546263A34E500ABAB1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				C5AF9544263A34E500ABAB1F /* AppDelegate.swift */,
 				C5AF9546263A34E500ABAB1F /* SceneDelegate.swift */,
 				C5AF954A263A34E500ABAB1F /* Main.storyboard */,
+				C5A49EB8263B8CF30087527C /* DetailViewController.swift */,
 				C5A49EB0263B2F6A0087527C /* UserCell.swift */,
 				C5AF954D263A34E800ABAB1F /* Assets.xcassets */,
 				C5AF954F263A34E800ABAB1F /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			files = (
 				C5AF9545263A34E500ABAB1F /* AppDelegate.swift in Sources */,
 				C5AF9547263A34E500ABAB1F /* SceneDelegate.swift in Sources */,
+				C5A49EB9263B8CF30087527C /* DetailViewController.swift in Sources */,
 				C5A49EB1263B2F6A0087527C /* UserCell.swift in Sources */,
 				C5AF9578263A679800ABAB1F /* HomeViewController.swift in Sources */,
 			);
